@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes piolas</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-bs-theme="ligh">
+
+<div class="stylenav">
+    <nav id="navbar" class="oculto navbar navbar-expand-lg-bg">
+      <h1>Coffe</h1>
+       <!-- Botón para cambiar entre temas oscuro y claro -->
+        <button onclick="tema()" class="navbar-toggler  my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="navbar-toggler-icon" src="img/temita.png">
+        </button>
+    </nav>
+</div>
+
+<!-- Loader que muestra una animación mientras la página carga -->
+    <div id="loader">
+        <div id="taza">
+            <div id="cafe"></div>
+        </div>
+    </div>
+
+<!-- Contenido que se va a ocultar al principio -->
+    <div id="contenido" class="oculto">
+        <h1>Cafes aesthetics</h1>
+            <div class="carrusel">
+                 <!-- Botón para ir a la imagen anterior -->
+                <button class="anterior" id="anterior"><</button>
+                    <div class="carrusel-contenido">
+                        <img src="img/cafecito.jpg" alt="Imagen 1">
+                        <img src="img/cafe2.png" alt="Imagen 2">
+                        <img src="img/cafe3.png" alt="Imagen 3">
+                    </div>
+                 <!-- Botón para ir a la siguiente imagen -->
+                <button class="siguiente" id="siguiente">></button>
+            </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
